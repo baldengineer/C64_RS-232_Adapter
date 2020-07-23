@@ -87,7 +87,7 @@ DCD
 Text Label 7200 2150 0    50   ~ 0
 RXD
 Text Label 7200 2250 0    50   ~ 0
-TXR
+TXD
 Text Label 7200 2350 0    50   ~ 0
 DTR
 Text Label 7200 2450 0    50   ~ 0
@@ -131,7 +131,7 @@ RXD
 Wire Wire Line
 	8500 3150 8250 3150
 Text Label 8250 3350 0    50   ~ 0
-TXR
+TXD
 Wire Wire Line
 	8500 3350 8250 3350
 Text Label 8250 2950 0    50   ~ 0
@@ -163,9 +163,11 @@ L My_Library:MAX3241CAI U?
 U 1 1 5F1BB48F
 P 5350 2800
 F 0 "U?" H 5800 4250 50  0000 C CNN
-F 1 "MAX3241CAI" H 5650 4150 50  0000 C CNN
-F 2 "SOP65P777X199-28N" H 4850 1500 50  0001 L BNN
-F 3 "" H 5350 2800 50  0001 C CNN
+F 1 "MAX3241ECAI+T" H 5650 4150 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 4850 1500 50  0001 L BNN
+F 3 "https://datasheet.octopart.com/MAX3241ECAI%2BT-Maxim-Integrated-datasheet-41193774.pdf" H 5350 2800 50  0001 C CNN
+F 4 "Newark" H 5350 2800 50  0001 C CNN "Supplier"
+F 5 "73Y3495" H 5350 2800 50  0001 C CNN "SPN"
 	1    5350 2800
 	1    0    0    -1  
 $EndComp
@@ -276,36 +278,17 @@ F 3 "~" H 6300 3800 50  0001 C CNN
 	1    6300 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 4450 6200 4450
-Wire Wire Line
-	6100 4650 6200 4650
 $Comp
 L power:GND #PWR?
 U 1 1 5F1D184C
-P 5500 4450
-F 0 "#PWR?" H 5500 4200 50  0001 C CNN
-F 1 "GND" V 5505 4322 50  0000 R CNN
-F 2 "" H 5500 4450 50  0001 C CNN
-F 3 "" H 5500 4450 50  0001 C CNN
-	1    5500 4450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 4650 5550 4650
-$Comp
-L power:+5V #PWR?
-U 1 1 5F1D304D
-P 5550 4650
-F 0 "#PWR?" H 5550 4500 50  0001 C CNN
-F 1 "+5V" H 5650 4750 50  0000 C CNN
-F 2 "" H 5550 4650 50  0001 C CNN
-F 3 "" H 5550 4650 50  0001 C CNN
-	1    5550 4650
+P 5950 4250
+F 0 "#PWR?" H 5950 4000 50  0001 C CNN
+F 1 "GND" H 5955 4077 50  0000 C CNN
+F 2 "" H 5950 4250 50  0001 C CNN
+F 3 "" H 5950 4250 50  0001 C CNN
+	1    5950 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 4450 5800 4450
 Wire Wire Line
 	4650 1600 4500 1600
 Wire Wire Line
@@ -394,4 +377,74 @@ Wire Wire Line
 	6450 3800 6550 3800
 Wire Wire Line
 	6550 3800 6550 3750
+Text Notes 6800 3850 0    50   ~ 0
+RS232\n------\n1 	DCD 	Data Carrier Detect 	In\n2 	RXD 	Receive Data 	In\n3 	TXD 	Transmit Data 	Out\n4 	DTR 	Data Terminal Ready 	Out\n5 	GND 	Ground 	-\n6 	DSR 	Data Set Ready 	In\n7 	RTS 	Request to Send 	Out\n8 	CTS 	Clear to Send 	In\n9 	RI 	Ring Indicator 	In 
+Text Label 6450 3050 2    50   ~ 0
+DCD_232
+Text Label 6450 3150 2    50   ~ 0
+RXD_232
+Text Label 6450 3250 2    50   ~ 0
+DSR_232
+Text Label 4300 2450 0    50   ~ 0
+TXD_TTL
+Text Label 4300 2550 0    50   ~ 0
+DTR_TTL
+Text Label 5700 4250 0    50   ~ 0
+GND
+Wire Wire Line
+	5950 4250 5700 4250
+Text Label 4300 2650 0    50   ~ 0
+RTS_TTL
+Text Label 6450 3350 2    50   ~ 0
+CTS_232
+Text Label 6450 3450 2    50   ~ 0
+RI_232
+Wire Wire Line
+	4300 2450 4650 2450
+Wire Wire Line
+	4300 2550 4650 2550
+Wire Wire Line
+	4300 2650 4650 2650
+Text Label 6400 2450 2    50   ~ 0
+TXD_232
+Text Label 6400 2550 2    50   ~ 0
+DTR_232
+Text Label 6400 2650 2    50   ~ 0
+RTS_232
+Wire Wire Line
+	6400 2450 6050 2450
+Wire Wire Line
+	6400 2550 6050 2550
+Wire Wire Line
+	6400 2650 6050 2650
+Wire Wire Line
+	6050 3050 6450 3050
+Wire Wire Line
+	6450 3150 6050 3150
+Wire Wire Line
+	6050 3250 6450 3250
+Wire Wire Line
+	6450 3350 6050 3350
+Wire Wire Line
+	6050 3450 6450 3450
+Text Label 4250 3050 0    50   ~ 0
+DCD_TTL
+Text Label 4250 3150 0    50   ~ 0
+RXD_TTL
+Text Label 4250 3250 0    50   ~ 0
+DSR_TTL
+Text Label 4250 3350 0    50   ~ 0
+CTS_TTL
+Text Label 4250 3450 0    50   ~ 0
+RI_TTL
+Wire Wire Line
+	4650 3050 4250 3050
+Wire Wire Line
+	4250 3150 4650 3150
+Wire Wire Line
+	4650 3250 4250 3250
+Wire Wire Line
+	4250 3350 4650 3350
+Wire Wire Line
+	4650 3450 4250 3450
 $EndSCHEMATC
