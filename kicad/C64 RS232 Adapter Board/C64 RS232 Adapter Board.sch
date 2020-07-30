@@ -732,7 +732,7 @@ U 1 1 5F3AEEB3
 P 3950 3350
 F 0 "J4" H 3975 4120 50  0000 C CNN
 F 1 "User Port Breakout" H 3975 4029 50  0000 C CNN
-F 2 "My Libraries:TSM-112-01-L-DV" H 3950 3350 50  0001 C CNN
+F 2 "My Libraries:TSM-for-C64-User-Port" H 3950 3350 50  0001 C CNN
 F 3 "https://sigma.octopart.com/11591496/technical_drawing/Molex-15-91-0240.pdf" H 3950 3350 50  0001 C CNN
 F 4 "Molex" H 3950 3350 50  0001 C CNN "Manu"
 F 5 "15-91-0240" H 3950 3350 50  0001 C CNN "MFN"
@@ -982,4 +982,6 @@ F 3 "~" H 1400 6150 50  0001 C CNN
 	1    1400 6150
 	1    0    0    -1  
 $EndComp
+Text Notes 5150 1400 0    50   ~ 0
+Alternative SMD 9-pin mount\n350-V3-109-00-106101
 $EndSCHEMATC
