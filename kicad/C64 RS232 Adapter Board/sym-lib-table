@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name C64_RS232_Adapter_Library)(type Legacy)(uri ${KIPRJMOD}/C64_RS232_Adapter_Library.lib)(options "")(descr ""))
+  (lib (name C64-RS232-Adapter-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/C64 RS232 Adapter Board-rescue.lib")(options "")(descr ""))
 )
