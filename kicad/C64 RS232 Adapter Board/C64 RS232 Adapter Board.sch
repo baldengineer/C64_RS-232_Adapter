@@ -981,9 +981,13 @@ F 3 "~" H 1400 6150 50  0001 C CNN
 $EndComp
 <<<<<<< HEAD
 Text Notes 5150 1400 0    50   ~ 0
+<<<<<<< HEAD
 Alternative SMD 9-pin mount\n350-V3-109-00-106101\noR A 10 PIN: \n10129380-910001ALF
 Text Label 1400 1750 1    50   ~ 0
 RESET
 =======
 >>>>>>> parent of 9f054d1... First pass of part layout
+=======
+Alternative SMD 9-pin mount\n350-V3-109-00-106101
+>>>>>>> parent of dc33953... Tried this layout but don't like it
 $EndSCHEMATC
