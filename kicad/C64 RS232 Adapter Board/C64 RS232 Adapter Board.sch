@@ -271,9 +271,9 @@ Wire Wire Line
 	9150 4400 9250 4400
 Wire Wire Line
 	9250 4400 9250 4350
-Text Label 9150 3750 2    50   ~ 0
+Text Label 9150 3950 2    50   ~ 0
 DCD_232
-Text Label 9150 4050 2    50   ~ 0
+Text Label 9150 3650 2    50   ~ 0
 RXD_232
 Text Label 9150 3850 2    50   ~ 0
 DSR_232
@@ -287,9 +287,9 @@ Wire Wire Line
 	8650 4850 8400 4850
 Text Label 7000 3250 0    50   ~ 0
 RTS_TTL
-Text Label 9150 3950 2    50   ~ 0
+Text Label 9150 3750 2    50   ~ 0
 CTS_232
-Text Label 9150 3650 2    50   ~ 0
+Text Label 9150 4050 2    50   ~ 0
 RI_232
 Text Label 9100 3050 2    50   ~ 0
 TXD_232
@@ -313,13 +313,13 @@ Wire Wire Line
 	9150 3950 8750 3950
 Wire Wire Line
 	8750 4050 9150 4050
-Text Label 6950 4050 0    50   ~ 0
+Text Label 6950 3650 0    50   ~ 0
 RXD_TTL
 Text Label 6950 3850 0    50   ~ 0
 DSR_TTL
-Text Label 6950 3950 0    50   ~ 0
+Text Label 6950 3750 0    50   ~ 0
 CTS_TTL
-Text Label 6950 3650 0    50   ~ 0
+Text Label 6950 4050 0    50   ~ 0
 RI_TTL
 $Comp
 L Connector_Generic:Conn_01x09 J1
@@ -962,6 +962,6 @@ Wire Wire Line
 	10200 3200 9750 3200
 Text Label 9750 3200 0    50   ~ 0
 DTR_232
-Text Label 6950 3750 0    50   ~ 0
+Text Label 6950 3950 0    50   ~ 0
 DCD_TTL
 $EndSCHEMATC
