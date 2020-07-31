@@ -84,7 +84,7 @@ U 1 1 5F1C2492
 P 9050 2300
 F 0 "C3" V 8900 2300 50  0000 C CNN
 F 1 "1u" V 9150 2300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9050 2300 50  0001 C CNN
 F 3 "~" H 9050 2300 50  0001 C CNN
 	1    9050 2300
 	0    1    1    0   
@@ -110,7 +110,7 @@ U 1 1 5F1C6BD7
 P 8850 2700
 F 0 "C4" V 8700 2700 50  0000 C CNN
 F 1 "1u" V 8950 2700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8850 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8850 2700 50  0001 C CNN
 F 3 "~" H 8850 2700 50  0001 C CNN
 	1    8850 2700
 	0    1    1    0   
@@ -134,7 +134,7 @@ U 1 1 5F1C9632
 P 7200 2300
 F 0 "C1" H 7350 2200 50  0000 C CNN
 F 1 "0.1u" H 7400 2300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7200 2300 50  0001 C CNN
 F 3 "~" H 7200 2300 50  0001 C CNN
 	1    7200 2300
 	-1   0    0    1   
@@ -145,7 +145,7 @@ U 1 1 5F1CBAF7
 P 7200 2700
 F 0 "C2" H 7050 2750 50  0000 C CNN
 F 1 "1u" H 7050 2650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7200 2700 50  0001 C CNN
 F 3 "~" H 7200 2700 50  0001 C CNN
 	1    7200 2700
 	1    0    0    -1  
@@ -199,7 +199,7 @@ U 1 1 5F1EF63B
 P 7300 1750
 F 0 "C5" H 7450 1650 50  0000 C CNN
 F 1 "1u" H 7450 1750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7300 1750 50  0001 C CNN
 F 3 "~" H 7300 1750 50  0001 C CNN
 	1    7300 1750
 	-1   0    0    1   
@@ -326,57 +326,169 @@ RI_TTL
 $Comp
 L Connector_Generic:Conn_01x09 J1
 U 1 1 5F1A3DF6
-P 6400 3350
-F 0 "J1" H 6350 4000 50  0000 L CNN
-F 1 "RS232_HDR" H 6300 3900 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6400 3350 50  0001 C CNN
-F 3 "~" H 6400 3350 50  0001 C CNN
-	1    6400 3350
+P 5900 2150
+F 0 "J1" H 5850 2800 50  0000 L CNN
+F 1 "RS232_HDR" H 5800 2700 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 5900 2150 50  0001 C CNN
+F 3 "~" H 5900 2150 50  0001 C CNN
+	1    5900 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 3750 5850 3750
+	5700 2550 5350 2550
 Wire Wire Line
-	6200 3650 5850 3650
+	5700 2450 5350 2450
 Wire Wire Line
-	6200 3550 5850 3550
+	5700 2350 5350 2350
 Wire Wire Line
-	6200 3450 5850 3450
+	5700 2250 5350 2250
 Wire Wire Line
-	6200 3350 5950 3350
+	5700 2150 5450 2150
 Wire Wire Line
-	6200 3150 5850 3150
+	5700 1950 5350 1950
 Wire Wire Line
-	6200 3050 5850 3050
+	5700 1850 5350 1850
 Wire Wire Line
-	6200 2950 5850 2950
-Text Label 5950 3350 0    50   ~ 0
+	5700 1750 5350 1750
+Text Label 5450 2150 0    50   ~ 0
 GND
-Text Label 5850 3750 0    50   ~ 0
+Text Label 5350 2550 0    50   ~ 0
 RI_TTL
-Text Label 5850 3650 0    50   ~ 0
+Text Label 5350 2450 0    50   ~ 0
 CTS_TTL
-Text Label 5850 3550 0    50   ~ 0
+Text Label 5350 2350 0    50   ~ 0
 RTS_TTL
-Text Label 5850 3450 0    50   ~ 0
+Text Label 5350 2250 0    50   ~ 0
 DSR_TTL
-Text Label 5850 3050 0    50   ~ 0
+Text Label 5350 1850 0    50   ~ 0
 RXD_TTL
-Text Label 5850 2950 0    50   ~ 0
+Text Label 5350 1750 0    50   ~ 0
 DCD_TTL
-Text Label 5850 3150 0    50   ~ 0
+Text Label 5350 1950 0    50   ~ 0
 TXD_TTL
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5F279987
+P 6800 3050
+F 0 "JP2" H 6800 3163 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6800 3164 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6800 3050 50  0001 C CNN
+F 3 "~" H 6800 3050 50  0001 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP3
+U 1 1 5F27A357
+P 6500 3150
+F 0 "JP3" H 6500 3263 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6500 3264 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6500 3150 50  0001 C CNN
+F 3 "~" H 6500 3150 50  0001 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP4
+U 1 1 5F27B9A5
+P 6800 3250
+F 0 "JP4" H 6800 3363 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6800 3364 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6800 3250 50  0001 C CNN
+F 3 "~" H 6800 3250 50  0001 C CNN
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP5
+U 1 1 5F27E23F
+P 6750 3650
+F 0 "JP5" H 6750 3763 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6750 3764 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6750 3650 50  0001 C CNN
+F 3 "~" H 6750 3650 50  0001 C CNN
+	1    6750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP7
+U 1 1 5F27E245
+P 6450 3750
+F 0 "JP7" H 6450 3863 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6450 3864 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6450 3750 50  0001 C CNN
+F 3 "~" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP9
+U 1 1 5F280750
+P 6750 3850
+F 0 "JP9" H 6750 3963 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6750 3964 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6750 3850 50  0001 C CNN
+F 3 "~" H 6750 3850 50  0001 C CNN
+	1    6750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP10
+U 1 1 5F280756
+P 6450 3950
+F 0 "JP10" H 6450 4063 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6450 4064 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6450 3950 50  0001 C CNN
+F 3 "~" H 6450 3950 50  0001 C CNN
+	1    6450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP11
+U 1 1 5F282A5F
+P 6750 4050
+F 0 "JP11" H 6750 4163 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 6750 4164 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6750 4050 50  0001 C CNN
+F 3 "~" H 6750 4050 50  0001 C CNN
+	1    6750 4050
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7000 3050 7350 3050
+	6950 3050 7350 3050
 Wire Wire Line
-	7000 3250 7350 3250
+	6650 3150 7350 3150
 Wire Wire Line
-	6950 3850 7350 3850
+	6950 3250 7350 3250
 Wire Wire Line
-	6950 4050 7350 4050
+	6900 3650 7350 3650
 Wire Wire Line
-	6200 3250 5850 3250
-Text Label 5850 3250 0    50   ~ 0
+	6600 3750 7350 3750
+Wire Wire Line
+	6900 3850 7350 3850
+Wire Wire Line
+	6600 3950 7350 3950
+Wire Wire Line
+	6900 4050 7350 4050
+Wire Wire Line
+	6300 3950 5950 3950
+Wire Wire Line
+	6600 3850 5950 3850
+Wire Wire Line
+	5950 3750 6300 3750
+Wire Wire Line
+	5950 3650 6600 3650
+Wire Wire Line
+	6650 3250 5950 3250
+Wire Wire Line
+	6350 3150 5950 3150
+Wire Wire Line
+	6650 3050 5950 3050
+Wire Wire Line
+	5950 4050 6600 4050
+Wire Wire Line
+	5700 2050 5350 2050
+Text Label 5350 2050 0    50   ~ 0
 DTR_TTL
 Text Notes -3000 3650 0    50   ~ 0
 C64 User Port\n---------------\n1 	GND 	Ground\n2 	+5V 	+5 VDC (100 mA max)\n3 	/RESET 	Reset, will force a cold start. Also a reset output for devices.\n4 	CNT1 	Counter 1, from CIA #1\n5 	SP1 	Serial Port 1, from CIA #1\n6 	CNT2 	Counter 2, from CIA #2\n7 	SP2 	Serial port 2, from CIA #2\n8 	/PC2 	Handshaking line, from CIA #2\n9 	ATN 	Serial attention in\n10 	9VAC 	9 VAC (+ phase) (100 mA max)\n11 	9VAC 	9 VAC (- phase) (100 mA max)\n12 	GND 	Ground\nA 	GND 	Ground\nB 	/FLAG2 	Flag 2\nC 	PB0 	Data 0\nD 	PB1 	Data 1\nE 	PB2 	Data 2\nF 	PB3 	Data 3\nH 	PB4 	Data 4\nJ 	PB5 	Data 5\nK 	PB6 	Data 6\nL 	PB7 	Data 7\nM 	PA2 	PA2\nN 	GND 	Ground \n\nThanks to:\nhttps://www.c64-wiki.com/wiki/User_Port
@@ -412,7 +524,7 @@ U 1 1 5F2E2647
 P 1250 1650
 F 0 "R2" H 1050 1700 50  0000 L CNN
 F 1 "10K" H 1050 1600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1250 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1250 1650 50  0001 C CNN
 F 3 "~" H 1250 1650 50  0001 C CNN
 	1    1250 1650
 	1    0    0    -1  
@@ -437,8 +549,8 @@ L Device:LED_Small D1
 U 1 1 5F2E8F4C
 P 2350 1750
 F 0 "D1" V 2396 1680 50  0000 R CNN
-F 1 "C64-PWR" V 2305 1680 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2350 1750 50  0001 C CNN
+F 1 "PWR" V 2305 1680 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" V 2350 1750 50  0001 C CNN
 F 3 "~" V 2350 1750 50  0001 C CNN
 	1    2350 1750
 	0    -1   -1   0   
@@ -460,7 +572,7 @@ U 1 1 5F2E9AC6
 P 2350 1550
 F 0 "R1" H 2400 1650 50  0000 L CNN
 F 1 "1K" H 2400 1550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 1550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2350 1550 50  0001 C CNN
 F 3 "~" H 2350 1550 50  0001 C CNN
 	1    2350 1550
 	1    0    0    -1  
@@ -620,11 +732,11 @@ U 1 1 5F3AEEB3
 P 3950 3350
 F 0 "J4" H 3975 4120 50  0000 C CNN
 F 1 "User Port Breakout" H 3975 4029 50  0000 C CNN
-F 2 "My Libraries:C64_2.54mm_User_Port" H 3950 3350 50  0001 C CNN
-F 3 "" H 3950 3350 50  0001 C CNN
-F 4 "" H 3950 3350 50  0001 C CNN "Manu"
-F 5 "" H 3950 3350 50  0001 C CNN "MFN"
-F 6 "" H 3950 3350 50  0001 C CNN "SPN"
+F 2 "My Libraries:TSM-for-C64-User-Port" H 3950 3350 50  0001 C CNN
+F 3 "https://sigma.octopart.com/11591496/technical_drawing/Molex-15-91-0240.pdf" H 3950 3350 50  0001 C CNN
+F 4 "Molex" H 3950 3350 50  0001 C CNN "Manu"
+F 5 "15-91-0240" H 3950 3350 50  0001 C CNN "MFN"
+F 6 "25M0665" H 3950 3350 50  0001 C CNN "SPN"
 	1    3950 3350
 	1    0    0    -1  
 $EndComp
@@ -749,13 +861,21 @@ F 3 "" H 3150 2950 50  0001 C CNN
 $EndComp
 Text Notes 2850 6150 0    50   ~ 0
 Esp8266 GND -> C64 User Port Pin N (Gnd)\nEsp8266 TxD (GPIO1/TXD0) -> C64 User Port B and C (RxD. Yes, Short B and C together)\nEsp8266 RxD (GPIO3/RXD0) -> C64 User Port M (TxD)\nEsp8266 GPIO4 -> C64 User Port K (CTS)\nEsp8266 GPIO5 -> C64 User Port D (RTS)\nEsp8266 GPIO2 (d4) -> User Port H (DCD)\n\nThen:\n\nAdd a wire from M to 5 on user port plug\nAdd a wire from B,C to 7 on user port plug\nAdd a wire from L to 6 on the user port plug\n\n\n---\nC64 User Port to RS232 pinout, based on this guide:\nhttps://1200baud.wordpress.com/2017/03/04/build-your-own-9600-baud-c64-wifi-modem-for-20/
+Text Label 5950 3050 0    50   ~ 0
+PA2
+Text Label 5950 3950 0    50   ~ 0
+PB6
+Text Label 5950 3250 0    50   ~ 0
+PB1
+Text Label 5950 3650 0    50   ~ 0
+PB4
 $Comp
-L Jumper:SolderJumper_2_Open JP8
+L Jumper:SolderJumper_2_Bridged JP8
 U 1 1 5F3D2D8D
 P 5050 3850
 F 0 "JP8" H 5050 3750 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5050 3964 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5050 3850 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5050 3850 50  0001 C CNN
 F 3 "~" H 5050 3850 50  0001 C CNN
 	1    5050 3850
 	1    0    0    -1  
@@ -767,12 +887,12 @@ Wire Wire Line
 Text Label 5450 3850 2    50   ~ 0
 SP1
 $Comp
-L Jumper:SolderJumper_2_Open JP1
+L Jumper:SolderJumper_2_Bridged JP1
 U 1 1 5F3E2705
 P 5000 2950
 F 0 "JP1" H 5000 3063 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5000 3064 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5000 2950 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5000 2950 50  0001 C CNN
 F 3 "~" H 5000 2950 50  0001 C CNN
 	1    5000 2950
 	1    0    0    -1  
@@ -783,13 +903,15 @@ Wire Wire Line
 	5150 3050 5150 2950
 Wire Wire Line
 	4450 3050 5150 3050
+Text Label 5950 3750 0    50   ~ 0
+PB0
 $Comp
-L Jumper:SolderJumper_2_Open JP6
+L Jumper:SolderJumper_2_Bridged JP6
 U 1 1 5F3F22A9
 P 5050 3750
 F 0 "JP6" H 5050 3863 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5050 3864 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5050 3750 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5050 3750 50  0001 C CNN
 F 3 "~" H 5050 3750 50  0001 C CNN
 	1    5050 3750
 	1    0    0    -1  
@@ -864,100 +986,4 @@ Text Notes 5150 1400 0    50   ~ 0
 Alternative SMD 9-pin mount\n350-V3-109-00-106101\noR A 10 PIN: \n10129380-910001ALF
 Text Label 1400 1750 1    50   ~ 0
 RESET
-Wire Wire Line
-	7000 3150 7350 3150
-Wire Wire Line
-	6950 3650 7350 3650
-Wire Wire Line
-	6950 3750 7350 3750
-Wire Wire Line
-	6950 3950 7350 3950
-$Comp
-L Device:LED_Small D2
-U 1 1 5F28F52D
-P 6450 1750
-F 0 "D2" V 6496 1680 50  0000 R CNN
-F 1 "232-PWR" V 6405 1680 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6450 1750 50  0001 C CNN
-F 3 "~" V 6450 1750 50  0001 C CNN
-	1    6450 1750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 5F28F533
-P 6450 1850
-F 0 "#PWR0120" H 6450 1600 50  0001 C CNN
-F 1 "GND" H 6455 1677 50  0000 C CNN
-F 2 "" H 6450 1850 50  0001 C CNN
-F 3 "" H 6450 1850 50  0001 C CNN
-	1    6450 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5F28F539
-P 6450 1550
-F 0 "R3" H 6500 1650 50  0000 L CNN
-F 1 "1K" H 6500 1550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6450 1550 50  0001 C CNN
-F 3 "~" H 6450 1550 50  0001 C CNN
-	1    6450 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0121
-U 1 1 5F28F53F
-P 6450 1450
-F 0 "#PWR0121" H 6450 1300 50  0001 C CNN
-F 1 "+5V" H 6465 1623 50  0000 C CNN
-F 2 "" H 6450 1450 50  0001 C CNN
-F 3 "" H 6450 1450 50  0001 C CNN
-	1    6450 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 5F29E20E
-P 1050 6400
-F 0 "H5" H 1150 6400 50  0000 L CNN
-F 1 "MountingHole" H 1150 6355 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 1050 6400 50  0001 C CNN
-F 3 "~" H 1050 6400 50  0001 C CNN
-	1    1050 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H6
-U 1 1 5F29E602
-P 1400 6400
-F 0 "H6" H 1500 6400 50  0000 L CNN
-F 1 "MountingHole" H 1500 6355 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 1400 6400 50  0001 C CNN
-F 3 "~" H 1400 6400 50  0001 C CNN
-	1    1400 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5F29F7DC
-P 1050 6650
-F 0 "H?" H 1150 6650 50  0000 L CNN
-F 1 "MountingHole" H 1150 6605 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 1050 6650 50  0001 C CNN
-F 3 "~" H 1050 6650 50  0001 C CNN
-	1    1050 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5F29FB17
-P 1400 6650
-F 0 "H?" H 1500 6650 50  0000 L CNN
-F 1 "MountingHole" H 1500 6605 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 1400 6650 50  0001 C CNN
-F 3 "~" H 1400 6650 50  0001 C CNN
-	1    1400 6650
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
