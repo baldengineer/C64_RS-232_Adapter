@@ -15,8 +15,8 @@ Comment4 ""
 $EndDescr
 Text Notes 11900 6550 0    50   ~ 0
 C64 User Port\n---------------\n1 	GND 	Ground\n2 	+5V 	+5 VDC (100 mA max)\n3 	/RESET 	Reset, will force a cold start. Also a reset output for devices.\n4 	CNT1 	Counter 1, from CIA #1\n5 	SP1 	Serial Port 1, from CIA #1\n6 	CNT2 	Counter 2, from CIA #2\n7 	SP2 	Serial port 2, from CIA #2\n8 	/PC2 	Handshaking line, from CIA #2\n9 	ATN 	Serial attention in\n10 	9VAC 	9 VAC (+ phase) (100 mA max)\n11 	9VAC 	9 VAC (- phase) (100 mA max)\n12 	GND 	Ground\nA 	GND 	Ground\nB 	/FLAG2 	Flag 2\nC 	PB0 	Data 0\nD 	PB1 	Data 1\nE 	PB2 	Data 2\nF 	PB3 	Data 3\nH 	PB4 	Data 4\nJ 	PB5 	Data 5\nK 	PB6 	Data 6\nL 	PB7 	Data 7\nM 	PA2 	PA2\nN 	GND 	Ground \n\nThanks to:\nhttps://www.c64-wiki.com/wiki/User_Port
-Text Notes 11950 7950 0    50   ~ 0
-RS232\n------\n1 	DCD 	Data Carrier Detect 	In\n2 	RXD 	Receive Data 	In\n3 	TXD 	Transmit Data 	Out\n4 	DTR 	Data Terminal Ready 	Out\n5 	GND 	Ground 	-\n6 	DSR 	Data Set Ready 	In\n7 	RTS 	Request to Send 	Out\n8 	CTS 	Clear to Send 	In\n9 	RI 	Ring Indicator 	In 
+Text Notes 11900 3950 0    50   ~ 0
+RS232\n------\n*1 	DCD 	Data Carrier Detect 	In\n*2 	RXD 	Receive Data 	In\n*3 	TXD 	Transmit Data 	Out\n4 	DTR 	Data Terminal Ready 	Out\n5 	GND 	Ground 	-\n*6 	DSR 	Data Set Ready 	In\n*7 	RTS 	Request to Send 	Out\n*8 	CTS 	Clear to Send 	In\n*9 	RI 	Ring Indicator 	In 
 $Comp
 L Connector:DB25_Male J2
 U 1 1 5F19B9FB
@@ -271,9 +271,9 @@ Wire Wire Line
 	9150 4400 9250 4400
 Wire Wire Line
 	9250 4400 9250 4350
-Text Label 9150 3650 2    50   ~ 0
-DCD_232
 Text Label 9150 3750 2    50   ~ 0
+DCD_232
+Text Label 9150 4050 2    50   ~ 0
 RXD_232
 Text Label 9150 3850 2    50   ~ 0
 DSR_232
@@ -289,13 +289,13 @@ Text Label 7000 3250 0    50   ~ 0
 RTS_TTL
 Text Label 9150 3950 2    50   ~ 0
 CTS_232
-Text Label 9150 4050 2    50   ~ 0
+Text Label 9150 3650 2    50   ~ 0
 RI_232
 Text Label 9100 3050 2    50   ~ 0
 TXD_232
-Text Label 9100 3150 2    50   ~ 0
-DTR_232
 Text Label 9100 3250 2    50   ~ 0
+DTR_232
+Text Label 9100 3150 2    50   ~ 0
 RTS_232
 Wire Wire Line
 	9100 3050 8750 3050
@@ -313,15 +313,13 @@ Wire Wire Line
 	9150 3950 8750 3950
 Wire Wire Line
 	8750 4050 9150 4050
-Text Label 6950 3650 0    50   ~ 0
-DCD_TTL
-Text Label 6950 3750 0    50   ~ 0
+Text Label 6950 4050 0    50   ~ 0
 RXD_TTL
 Text Label 6950 3850 0    50   ~ 0
 DSR_TTL
 Text Label 6950 3950 0    50   ~ 0
 CTS_TTL
-Text Label 6950 4050 0    50   ~ 0
+Text Label 6950 3650 0    50   ~ 0
 RI_TTL
 $Comp
 L Connector_Generic:Conn_01x09 J1
@@ -352,19 +350,19 @@ Wire Wire Line
 	6200 2950 5850 2950
 Text Label 5950 3350 0    50   ~ 0
 GND
-Text Label 5850 3750 0    50   ~ 0
+Text Label 5850 3250 0    50   ~ 0
 RI_TTL
 Text Label 5850 3650 0    50   ~ 0
 CTS_TTL
-Text Label 5850 3550 0    50   ~ 0
-RTS_TTL
-Text Label 5850 3450 0    50   ~ 0
-DSR_TTL
-Text Label 5850 3050 0    50   ~ 0
-RXD_TTL
-Text Label 5850 2950 0    50   ~ 0
-DCD_TTL
 Text Label 5850 3150 0    50   ~ 0
+RTS_TTL
+Text Label 5850 3550 0    50   ~ 0
+DSR_TTL
+Text Label 5850 3750 0    50   ~ 0
+RXD_TTL
+Text Label 5850 3450 0    50   ~ 0
+DCD_TTL
+Text Label 5850 2950 0    50   ~ 0
 TXD_TTL
 Wire Wire Line
 	7000 3050 7350 3050
@@ -376,7 +374,7 @@ Wire Wire Line
 	6950 4050 7350 4050
 Wire Wire Line
 	6200 3250 5850 3250
-Text Label 5850 3250 0    50   ~ 0
+Text Label 5850 3050 0    50   ~ 0
 DTR_TTL
 Text Notes -3000 3650 0    50   ~ 0
 C64 User Port\n---------------\n1 	GND 	Ground\n2 	+5V 	+5 VDC (100 mA max)\n3 	/RESET 	Reset, will force a cold start. Also a reset output for devices.\n4 	CNT1 	Counter 1, from CIA #1\n5 	SP1 	Serial Port 1, from CIA #1\n6 	CNT2 	Counter 2, from CIA #2\n7 	SP2 	Serial port 2, from CIA #2\n8 	/PC2 	Handshaking line, from CIA #2\n9 	ATN 	Serial attention in\n10 	9VAC 	9 VAC (+ phase) (100 mA max)\n11 	9VAC 	9 VAC (- phase) (100 mA max)\n12 	GND 	Ground\nA 	GND 	Ground\nB 	/FLAG2 	Flag 2\nC 	PB0 	Data 0\nD 	PB1 	Data 1\nE 	PB2 	Data 2\nF 	PB3 	Data 3\nH 	PB4 	Data 4\nJ 	PB5 	Data 5\nK 	PB6 	Data 6\nL 	PB7 	Data 7\nM 	PA2 	PA2\nN 	GND 	Ground \n\nThanks to:\nhttps://www.c64-wiki.com/wiki/User_Port
@@ -939,10 +937,10 @@ F 3 "~" H 1400 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H7
 U 1 1 5F29F7DC
 P 1050 6650
-F 0 "H?" H 1150 6650 50  0000 L CNN
+F 0 "H7" H 1150 6650 50  0000 L CNN
 F 1 "MountingHole" H 1150 6605 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.5mm" H 1050 6650 50  0001 C CNN
 F 3 "~" H 1050 6650 50  0001 C CNN
@@ -950,14 +948,20 @@ F 3 "~" H 1050 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H8
 U 1 1 5F29FB17
 P 1400 6650
-F 0 "H?" H 1500 6650 50  0000 L CNN
+F 0 "H8" H 1500 6650 50  0000 L CNN
 F 1 "MountingHole" H 1500 6605 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.5mm" H 1400 6650 50  0001 C CNN
 F 3 "~" H 1400 6650 50  0001 C CNN
 	1    1400 6650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10200 3200 9750 3200
+Text Label 9750 3200 0    50   ~ 0
+DTR_232
+Text Label 6950 3750 0    50   ~ 0
+DCD_TTL
 $EndSCHEMATC
