@@ -322,7 +322,7 @@ CTS_TTL
 Text Label 6950 4050 0    50   ~ 0
 RI_TTL
 $Comp
-L Connector_Generic:Conn_01x09 J1
+L Connector_Generic:Conn_01x10 J1
 U 1 1 5F1A3DF6
 P 6400 3350
 F 0 "J1" H 6350 4000 50  0000 L CNN
@@ -964,4 +964,17 @@ Text Label 9750 3200 0    50   ~ 0
 DTR_232
 Text Label 6950 3950 0    50   ~ 0
 DCD_TTL
+Wire Wire Line
+	6200 3850 5950 3850
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3D8503
+P 5950 3850
+F 0 "#PWR?" H 5950 3700 50  0001 C CNN
+F 1 "+5V" H 5965 4023 50  0000 C CNN
+F 2 "" H 5950 3850 50  0001 C CNN
+F 3 "" H 5950 3850 50  0001 C CNN
+	1    5950 3850
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
