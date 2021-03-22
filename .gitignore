@@ -27,6 +27,8 @@ fp-info-cache
 
 *Gerbers*
 
+*.pdf
+
 
 # other stuff
 mos_6526_cia_recreated.pdf

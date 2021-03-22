@@ -977,4 +977,6 @@ F 3 "" H 5950 3850 50  0001 C CNN
 	1    5950 3850
 	0    -1   -1   0   
 $EndComp
+Text Notes 8700 3350 0    50   ~ 0
+need to fix RTS / DTR
 $EndSCHEMATC
